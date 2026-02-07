@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./stylesheet.css">
-<title>My Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Conversion</title>
+    <link rel="stylesheet" href="temp.css">
 </head>
-<h1>Welcome to my website</h1>
-<h3>Here is my projects</h3>
-<img src="./assets/images/project1.png" alt="project">
-<a href="./public/contact.html">contact Us</a>
+
 <body>
+    <form class="tempa">
+        <h3> Temprature Conversion</h3>
+        <input type="number" id="textBox" value="0"><br>
+        <input type="radio" id="toPheranhite" name="unit">
+        <label for="toPheranhite">Celcius ➡ Pheranhit</label><br>
+         <input type="radio" id="toCelcius" name="unit">
+        <label for="toCelcius">Pheranhit ➡ Celcius  </label><br>
+        <button type="button" id="myButton" onclick="convert()">Convert</button>
+        <p id="result"></p>
+    </form>
+    <script src="index.js"></script>
 </body>
 
 </html>
